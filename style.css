@@ -113,12 +113,13 @@ body {
             padding: var(--space-2sm);
             text-align: center;
             color: var(--white);
-            transition: background-color 450ms ease-out, color 450ms ease-out;
+            transition: background-color 350ms ease-in 60ms, color 350ms ease-in 60ms;
 
             &:hover {
                 background: var(--green);
                 color: var(--grey-700);
                 cursor: pointer;
+                transition: background-color 90ms ease-out, color 90ms ease-out;
             }
 
             a {
@@ -127,5 +128,11 @@ body {
                 display: block;
             }
         }
+    }
+}
+
+@media (min-width: 768px){
+    .social-profile__container {
+        padding: 40px;
     }
 }
